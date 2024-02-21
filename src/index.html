@@ -18,13 +18,26 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
-      <nav>
-        <ul>
-          <li><a href="./pixabay-api.html">Pixabay-Api</a></li>
-          <li><a href="./render-functions.html">Render-Functions</a></li>
-        </ul>
-      </nav>
+    <section class="search">
+      <form class="form-search">
+        <label for="keywords">
+          <input
+            class="keywords"
+            type="text"
+            id="keywords"
+            placeholder="Search images..."
+          />
+        </label>
+        <button class="btn-search" type="submit">Search</button>
+      </form>
+      <div class="loading visually-hidden">
+        <span class="loader"></span>
+      </div>
     </section>
+    <section>
+      <ul class="gallery"></ul>
+    </section>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
